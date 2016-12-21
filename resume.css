@@ -1,0 +1,44 @@
+  div.text-center{
+		  position: relative;
+          font-family:fantasy;
+          height: 600px;
+          width: auto;
+          margin: auto;
+          border: solid 8px tomato;
+		  background-repeat: repeat;
+		  background-size: 500px 600px;
+  
+	  	}
+
+#profile{
+
+          font-family:cursive;
+          border: solid 8px tomato;
+}
+
+#education{
+          font-family:cursive;
+          border: solid 8px tomato;
+}
+
+#skills{
+          font-family:cursive;
+          border: solid 8px tomato;
+}
+
+#experience{
+          font-family:cursive;
+          border: solid 8px tomato;
+}
+
+#works{
+          
+          font-family:cursive;
+          border: solid 8px tomato;
+}
+
+#contact{
+          text-align: center;
+          font-family:cursive;
+          border: solid 8px tomato;
+}
