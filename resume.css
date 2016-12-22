@@ -1,44 +1,105 @@
-  div.text-center{
+@keyframes backgroundScroll {
+		from {background-position: 0 0;}
+		to {background-position: 0 -300px;}
+}
+
+*:focus {
+    outline: none;
+}
+
+
+nav.navbar-default{
+          position: absolute;
+          top: 10px;
+          width: 100%;
+          text-align: center;
+          background-color:transparent;
+          border-color:transparent;
+          font-family: 'Catamaran', sans-serif;   
+          font-weight: bold;
+          font-size: 26px;
+          color: aqua;
+
+}
+
+hr { 
+         border : 0;
+         height: 1px; 
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));    
+}
+
+div.intro{
+          font-family: 'Catamaran', sans-serif;   
+          font-weight: bold;
+          font-size: 70px;
+          background: -webkit-linear-gradient(DodgerBlue, aqua);
+  		  -webkit-background-clip: text;
+  		  -webkit-text-fill-color: transparent;
+}
+
+
+i.fa-angle-double-down{
+          color: aqua;
+}
+
+
+div.text-center{
 		  position: relative;
-          font-family:fantasy;
-          height: 600px;
+          font-family: 'Catamaran', sans-serif;   
+          font-weight: bold;
+          font-size: 60px;
+          height: 700px;
           width: auto;
           margin: auto;
-          border: solid 8px tomato;
-		  background-repeat: repeat;
-		  background-size: 500px 600px;
+          padding-top: 12%;
+          background-image:url("bridge.JPG");
+          background-size:cover;
+		  background-repeat:repeat;
+          animation: backgroundScroll 30s linear infinite;
+          opacity: 0.7;
+          filter: alpha(opacity=70);
   
-	  	}
+}
 
 #profile{
 
-          font-family:cursive;
-          border: solid 8px tomato;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 26px;
+          background-color:lightslategray;
 }
 
 #education{
-          font-family:cursive;
-          border: solid 8px tomato;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 26px;
+          background-color:burlywood;
+
 }
 
 #skills{
-          font-family:cursive;
-          border: solid 8px tomato;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 26px;
+          background-color:darkturquoise;
+
 }
 
 #experience{
-          font-family:cursive;
-          border: solid 8px tomato;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 26px;
+          background-color:aquamarine;
+
 }
 
 #works{
           
-          font-family:cursive;
-          border: solid 8px tomato;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 26px;
+          background-color:darkorange;
 }
 
 #contact{
           text-align: center;
-          font-family:cursive;
-          border: solid 8px tomato;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 26px;
+          background-color:bisque;
+
 }
