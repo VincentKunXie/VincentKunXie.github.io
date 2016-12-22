@@ -22,17 +22,27 @@ nav.navbar-default{
 
 }
 
+#navname{
+          font-family: 'Pacifico', cursive;
+          font-weight: bold;
+          font-size: 36px;
+          color: tomato;
+}
+
+.nav.navbar-nav.navbar-right li a{
+         color:tomato;
+}
+
 hr { 
-         border : 0;
-         height: 1px; 
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));    
+         border: none; 
+         border-bottom: 3px solid black;  
 }
 
 div.intro{
           font-family: 'Catamaran', sans-serif;   
           font-weight: bold;
           font-size: 70px;
-          background: -webkit-linear-gradient(DodgerBlue, aqua);
+          background: -webkit-linear-gradient(tomato, orange);
   		  -webkit-background-clip: text;
   		  -webkit-text-fill-color: transparent;
 }
@@ -61,39 +71,92 @@ div.text-center{
   
 }
 
+
+#social{
+          padding-top: 6%;
+          font-family: 'Catamaran', sans-serif;
+          font-size: 40px;
+          font-weight: bold;
+          background-color:white;
+          text-align: center;
+          width: 100%;
+}
+
+#s{
+          
+}
+
+i.fa-user-circle-o{
+          padding-top: 3%;
+          color:lightsalmon;
+          text-align: center;
+          width: 100%;
+}
+
 #profile{
 
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:lightslategray;
+          background-color:lightgrey;
 }
+
+i.fa-graduation-cap{
+          padding-top: 3%;
+          color:purple;
+          text-align: center;
+          width: 100%;
+}
+
 
 #education{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:burlywood;
+          background-color:white;
+          text-align: center;
+          width: 100%;
 
+}
+
+i.fa-wrench{
+          padding-top: 3%;
+          color:black;
+          text-align: center;
+          width: 100%;
 }
 
 #skills{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:darkturquoise;
+          background-color:mediumaquamarine;
 
+}
+
+i.fa-map{
+          padding-top: 3%;
+          color:cornflowerblue;
+          text-align: center;
+          width: 100%;
 }
 
 #experience{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:aquamarine;
+          background-color:white;
 
+}
+
+i.fa-file{
+          padding-top: 3%;
+          color:darkorange;
+          text-align: center;
+          width: 100%;
 }
 
 #works{
           
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:darkorange;
+          background-color:tomato;
 }
 
 #contact{
