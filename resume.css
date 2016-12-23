@@ -3,10 +3,20 @@
 		to {background-position: 0 -300px;}
 }
 
+@media screen and (min-width:600px) {
+            ul>li {
+                text-align: right; 
+            }    
+}
+
 *:focus {
     outline: none;
 }
 
+section:hover{
+    text-shadow: 0 0 60px rgba(350, 300, 0, 1);
+
+}
 
 nav.navbar-default{
           position: absolute;
@@ -33,10 +43,6 @@ nav.navbar-default{
          color:tomato;
 }
 
-hr { 
-         border: none; 
-         border-bottom: 3px solid black;  
-}
 
 div.intro{
           font-family: 'Catamaran', sans-serif;   
@@ -52,6 +58,9 @@ i.fa-angle-double-down{
           color: aqua;
 }
 
+.fa-angle-double-down:hover{
+          color: tomato;
+}
 
 div.text-center{
 		  position: relative;
@@ -82,9 +91,35 @@ div.text-center{
           width: 100%;
 }
 
-#s{
-          
+
+.fa-facebook-official:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
 }
+
+.fa-linkedin-square:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+}
+
+.fa-github:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+}
+
+.fa-instagram:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+}
+
+.fa-skype:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+}
+
+.fa-weixin:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+}
+
+.fa-weibo:hover {
+    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+}
+
 
 i.fa-user-circle-o{
           padding-top: 3%;
@@ -165,5 +200,8 @@ i.fa-file{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
           background-color:bisque;
-
+          border-radius: 200px;
+          border-style:solid;
+          border-width: 36px;
+          border-color: aquamarine;
 }
