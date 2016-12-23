@@ -3,10 +3,10 @@
 		to {background-position: 0 -300px;}
 }
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:1210px) {
             .nav.navbar-nav.navbar-right>li {
                 text-align: right; 
-            }    
+            }
 }
 
 *:focus {
@@ -39,8 +39,16 @@ nav.navbar-default{
           color: tomato;
 }
 
+#navname:hover{
+          color:deeppink;
+}
+
 .nav.navbar-nav.navbar-right li a{
-         color:tomato;
+          color:tomato;
+}
+
+.nav.navbar-nav.navbar-right li a:hover{
+          color:deeppink;
 }
 
 
@@ -53,6 +61,12 @@ div.intro{
   		  -webkit-text-fill-color: transparent;
 }
 
+.intro:hover{
+          background: -webkit-linear-gradient(aqua, purple);
+  		  -webkit-background-clip: text;
+  		  -webkit-text-fill-color: transparent;
+          -webkit-transform: scale3d(1.2, 1.2, 1.2);
+}
 
 i.fa-angle-double-down{
           color: aqua;
@@ -121,11 +135,24 @@ div.text-center{
 }
 
 
-i.fa-user-circle-o{
-          padding-top: 3%;
-          color:lightsalmon;
-          text-align: center;
-          width: 100%;
+.mycircle {
+    
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    padding-top: 100px;
+    border-radius: 50%;
+    background-image:url("ME.jpg");
+    background-size:cover;
+    border: 20px solid aquamarine;
+    align-content: center;  
+    -webkit-filter: blur(2.5px);
+	filter: blur(2.5px);
+}
+
+.mycircle:hover {
+   	-webkit-filter: blur(0);
+	filter: blur(0);
 }
 
 #profile{
@@ -145,6 +172,7 @@ i.fa-graduation-cap{
 
 
 #education{
+          border: 20px solid pink;
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
           background-color:white;
@@ -175,6 +203,7 @@ i.fa-map{
 }
 
 #experience{
+          border: 20px solid purple;
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
           background-color:white;
@@ -193,6 +222,7 @@ i.fa-file{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
           background-color:tomato;
+          text-align: left;
 }
 
 #contact{
@@ -200,8 +230,8 @@ i.fa-file{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
           background-color:bisque;
-          border-radius: 200px;
+          border-radius: 300px;
           border-style:solid;
-          border-width: 36px;
+          border-width: 20px;
           border-color: aquamarine;
 }
