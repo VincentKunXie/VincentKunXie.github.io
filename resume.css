@@ -4,7 +4,7 @@
 }
 
 @media screen and (min-width:600px) {
-            ul>li {
+            .nav.navbar-nav.navbar-right>li {
                 text-align: right; 
             }    
 }
