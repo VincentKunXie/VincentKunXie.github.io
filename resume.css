@@ -1,22 +1,36 @@
+
 @keyframes backgroundScroll {
 		from {background-position: 0 0;}
-		to {background-position: 0 -300px;}
+		to {background-position: 0px -9600px;}
 }
 
-@media screen and (max-width:1210px) {
-            .nav.navbar-nav.navbar-right>li {
+@media screen and (max-width:600px) {
+    
+    .intro h1{
+        display: none;  
+    }
+    
+    #education img{
+        width: 50%;
+    }
+      
+}
+
+@media screen and (max-width:1200px) {
+    .nav.navbar-nav.navbar-right>li {
                 text-align: right; 
-            }
+    }
+    
+    .intro h1{
+        font-size: 24px;
+    }
 }
 
+/*
 *:focus {
     outline: none;
 }
-
-section:hover{
-    text-shadow: 0 0 60px rgba(350, 300, 0, 1);
-
-}
+*/
 
 nav.navbar-default{
           position: absolute;
@@ -28,8 +42,6 @@ nav.navbar-default{
           font-family: 'Catamaran', sans-serif;   
           font-weight: bold;
           font-size: 26px;
-          color: aqua;
-
 }
 
 #navname{
@@ -55,17 +67,33 @@ nav.navbar-default{
 div.intro{
           font-family: 'Catamaran', sans-serif;   
           font-weight: bold;
-          font-size: 70px;
+          font-size: 36px;
+          position: sticky;
+          top: 0px;
+          opacity: 0.6;
+/*
           background: -webkit-linear-gradient(tomato, orange);
   		  -webkit-background-clip: text;
   		  -webkit-text-fill-color: transparent;
+*/
+          
 }
 
-.intro:hover{
-          background: -webkit-linear-gradient(aqua, purple);
+.intro h1{
+          width: 100%;
+          background: -webkit-linear-gradient(tomato, orange);
+          padding-top: 60px;
+          padding-bottom: 60px;
+/*          transition: 1.2s;*/
+}
+
+.intro h1:hover{
+          background: -webkit-linear-gradient(pink, purple);
+/*
   		  -webkit-background-clip: text;
   		  -webkit-text-fill-color: transparent;
           -webkit-transform: scale3d(1.2, 1.2, 1.2);
+*/
 }
 
 i.fa-angle-double-down{
@@ -88,8 +116,8 @@ div.text-center{
           background-image:url("bridge.JPG");
           background-size:cover;
 		  background-repeat:repeat;
-          animation: backgroundScroll 30s linear infinite;
-          opacity: 0.7;
+          animation: backgroundScroll 120s linear infinite;
+/*          opacity: 0.2;*/
           filter: alpha(opacity=70);
   
 }
@@ -106,53 +134,34 @@ div.text-center{
 }
 
 
-.fa-facebook-official:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+i[class^="fa"]{
+      transition: all 1.2s ease;
 }
 
-.fa-linkedin-square:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
-}
-
-.fa-github:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
-}
-
-.fa-instagram:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
-}
-
-.fa-skype:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
-}
-
-.fa-weixin:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
-}
-
-.fa-weibo:hover {
-    -webkit-transform: scale3d(1.6, 1.6, 1.6);
+i[class^="fa"]:hover {
+      -webkit-transform: scale3d(1.6, 1.6, 1.6);
+      text-shadow: 3px 3px 6px gray;
 }
 
 
 .mycircle {
     
     margin: auto;
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
     padding-top: 100px;
     border-radius: 50%;
-    background-image:url("ME.jpg");
+    background-image:url("avatar.jpg");
     background-size:cover;
-    border: 20px solid aquamarine;
+    border: 10px solid tomato;
     align-content: center;  
-    -webkit-filter: blur(2.5px);
-	filter: blur(2.5px);
+    transition:width 1s, height 1s, border 1s; 
 }
 
 .mycircle:hover {
-   	-webkit-filter: blur(0);
-	filter: blur(0);
+    width: 520px;
+    height: 520px;
+    border: 10px dotted lightblue;
 }
 
 #profile{
@@ -167,71 +176,146 @@ i.fa-graduation-cap{
           padding-top: 3%;
           color:purple;
           text-align: center;
-          width: 100%;
+/*          width: 100%;*/
 }
 
 
 #education{
-          border: 20px solid pink;
+/*          border: 20px solid pink;*/
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:white;
+          background-image:linear-gradient(to right, #4568DC, #B06AB3);
           text-align: center;
           width: 100%;
+}
 
+.button{
+    background-color: white;
+    color: black;
+    border: 5px solid plum;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.6s;
+}
+
+.button:hover {
+    background-color: lightcoral;
+}
+
+.edu-container {
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        margin-right: 30px;
+        vertical-align: top;
+        border: 5px dotted pink;
+        padding-left: 20px;
 }
 
 i.fa-wrench{
           padding-top: 3%;
           color:black;
           text-align: center;
-          width: 100%;
+/*          width: 100%;*/
+    
 }
 
 #skills{
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:mediumaquamarine;
-
+          background-image:linear-gradient(to right, pink, lightblue);
+          text-align: center;
 }
 
 i.fa-map{
           padding-top: 3%;
           color:cornflowerblue;
-          text-align: center;
-          width: 100%;
+/*          width: 100%;*/
 }
 
 #experience{
-          border: 20px solid purple;
+/*          border: 20px solid purple;*/
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:white;
+          background-color:blanchedalmond;
+          text-shadow: 2px 2px 6px gray;
+          text-align: center;
+}
 
+#experience .container{
+    text-align: left;
+}
+
+#experience>.container>div{
+    border-bottom: 6px dotted lightgray; 
 }
 
 i.fa-file{
           padding-top: 3%;
           color:darkorange;
           text-align: center;
-          width: 100%;
+/*          width: 100%;*/
 }
 
 #works{
           
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
-          background-color:tomato;
-          text-align: left;
+          background-image:linear-gradient(to right, #ffd194, #70e1f5);
+          text-align: center;
+}
+
+#works .container{
+    text-align: left;
+}
+
+/*
+hr {
+    border: 2px dotted gray;
+    height: 20px;
+    display: block;
+}
+*/
+.accordion-container div{
+    background-color:aliceblue;
+}
+
+.accordion-container h2{
+    background: antiquewhite;
+}
+
+.accordion-container h2:hover{
+    background-image:linear-gradient(to left, #ffd194, #70e1f5);
 }
 
 #contact{
-          text-align: center;
           font-family: 'Catamaran', sans-serif;
-          font-size: 26px;
-          background-color:bisque;
-          border-radius: 300px;
+          font-size: 16px;
+          background-color:white;
+/*
           border-style:solid;
           border-width: 20px;
           border-color: aquamarine;
+*/
+}
+
+#up{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    transform: scale(2);
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    transition: 0.6s;
+}
+
+#up:hover{
+    border-radius: 36%;
+    border-color: tomato;
+    border-style: dotted;
 }
