@@ -1,8 +1,10 @@
 
+/*
 @keyframes backgroundScroll {
 		from {background-position: -6000px 700px;}
 		to {background-position: 6000px 700px;}
 }
+*/
 
 @media screen and (max-width:600px) {
     
@@ -13,49 +15,52 @@
     #education img{
         width: 50%;
     }
+    
+    .carousel-inner>.carousel-item>img {
+        height: 400px;
+    }
+    
+    #myCarousel{
+        height: 400px;
+    }
       
 }
 
 @media screen and (max-width:1200px) {
-    .nav.navbar-nav.navbar-right>li {
-                text-align: right; 
+    
+/*
+    .navbar-nav>li {
+                float: right; 
                 font-size: 24px;
     }
-    
+*/
     .intro h1{
         font-size: 24px;
     }
     
-/*
-    #social>i{
-        transform: scale3d(0.5,0.5,0.5);
+    .carousel-inner>.carousel-item>img {
+        height: 400px;
     }
-*/
+    
+    #myCarousel{
+        height: 400px;
+    }
+    
 }
 
-/*
-*:focus {
-    outline: none;
-}
-*/
 
-nav.navbar-default{
-          position: absolute;
-          top: 10px;
-          width: 100%;
-          text-align: center;
-          background-color:transparent;
-          border-color:transparent;
-          font-family: 'Catamaran', sans-serif;   
-          font-weight: bold;
-          font-size: 26px;
+
+.navbar{
+        font-family: 'Catamaran', sans-serif; 
+        background-image:linear-gradient(to bottom left, #B06AB3,#4568DC);
 }
 
 #navname{
           font-family: 'Pacifico', cursive;
           font-weight: bold;
-          font-size: 36px;
+          font-size: 32px;
           color: tomato;
+          margin-top: -12px;
 }
 
 #navname:hover{
@@ -63,21 +68,35 @@ nav.navbar-default{
 }
 
 .nav.navbar-nav.navbar-right li a{
-          color:tomato;
+        color:tomato;
+        text-decoration: none;
+        padding-left: 15px;
+        font-size: 24px;
+        font-weight: bold;
 }
 
 .nav.navbar-nav.navbar-right li a:hover{
           color:deeppink;
 }
 
+.carousel-item>img {
+    height: 900px;
+}
 
-div.intro{
+#myCarousel{
+    position: relative;
+    top: -160px;
+}
+
+.intro{
           font-family: 'Catamaran', sans-serif;   
           font-weight: bold;
           font-size: 36px;
           position: sticky;
           top: 0px;
           opacity: 0.6;
+          height: 160px;
+          z-index: 1;
 /*
           background: -webkit-linear-gradient(tomato, orange);
   		  -webkit-background-clip: text;
@@ -86,16 +105,16 @@ div.intro{
           
 }
 
-.intro h1{
+.intro>h1{
           width: 100%;
           background: -webkit-linear-gradient(tomato, orange);
-          padding-top: 60px;
-          padding-bottom: 60px;
+          padding-top: 30px;
+          padding-bottom: 30px;
 /*          transition: 1.2s;*/
 }
 
-.intro h1:hover{
-          background: -webkit-linear-gradient(pink, purple);
+.intro>h1:hover{
+          background: -webkit-linear-gradient(pink, aqua);
 /*
   		  -webkit-background-clip: text;
   		  -webkit-text-fill-color: transparent;
@@ -103,35 +122,34 @@ div.intro{
 */
 }
 
-i.fa-angle-double-down{
-          color: aqua;
+#myCarousel>a>i {
+    position: absolute;
+    bottom: 60px;
+    z-index: 1;
+    left: 49.5%;
+    transform: scale(2);
+    color: tomato;
+    transition: 0.8s;
 }
 
-.fa-angle-double-down:hover{
-          color: tomato;
+#myCarousel>a>i:hover {
+    color: gold;
+    transform: scale(3);
 }
 
-div.text-center{
-		  position: relative;
-          font-family: 'Catamaran', sans-serif;   
-          font-weight: bold;
-          font-size: 60px;
-          height: 700px;
-          width: auto;
-          margin: auto;
-          padding-top: 12%;
-          background-image:url("bridge.JPG");
-          background-size:cover;
-		  background-repeat:repeat;
-          animation: backgroundScroll 120s linear infinite;
-/*          opacity: 0.2;*/
-          filter: alpha(opacity=70);
-  
+/*
+#myCarousel>a>.carousel-control-prev-icon{
+    color: tomato;
+}
+*/
+
+.carousel-item>img{
+    width: 100%;
 }
 
 
 #social{
-          padding-top: 6%;
+/*          padding-top: 6%;*/
           font-family: 'Catamaran', sans-serif;
           font-size: 40px;
           font-weight: bold;
@@ -176,6 +194,7 @@ i[class^="fa"]:hover {
           font-family: 'Catamaran', sans-serif;
           font-size: 26px;
           background-color:lightgrey;
+    
 }
 
 
@@ -225,6 +244,7 @@ i.fa-graduation-cap{
     border-bottom: 2px dotted black;
     margin-right: 20px;
     padding-bottom: 5px;
+    padding-top: 10px;
 }
 
 i.fa-wrench{
@@ -240,6 +260,10 @@ i.fa-wrench{
           font-size: 26px;
           background-image:linear-gradient(to right, pink, lightblue);
           text-align: center;
+}
+
+#skills>.container>.button {
+    margin-bottom: 20px;
 }
 
 i.fa-map{
@@ -320,16 +344,17 @@ i.fa-file{
     bottom: 20px;
     right: 25px;
     transform: scale(2);
-    border: 1px solid black;
+    border: 2px dotted black;
     height: 20px;
     width: 30px;
     text-align: center;
     opacity: 0.56;
     transition: 0.5s;
+    padding-bottom: 20px;
 }
 
 #up:hover{
-    border-radius: 36%;
-    border: 2px dotted tomato;
+    border-radius: 50%;
+    border: 2px solid tomato;
     opacity: 0.9;
 }
