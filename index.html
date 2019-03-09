@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link href="resume.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="font-awesome-animation.min.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -34,7 +34,15 @@
             $(".accordion-container").accordion({
                 icons: icons
             });
-        
+            
+            document.querySelectorAll('a[href^="#"]').forEach(a => {
+                a.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });     
     
     });
 
@@ -47,7 +55,7 @@
    
 
    
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" id="top">
               <a class="navbar-brand page-scroll" id="navname" href="http://vincentkunxie.github.io//">Vincent's Resume</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mybar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,6 +81,9 @@
                     <li>
                         <a href="#works">Works</a>
                     </li>
+                    <li>
+                        <a href="#achieves">Achievements</a>
+                    </li>
                      <li>
                         <a href="#contact">Contact</a>
                     </li>
@@ -95,9 +106,9 @@
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
                 <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                
+                <li data-target="#myCarousel" data-slide-to="5"></li>      
               </ol>
+              
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img class="w-100" src="./carousel_img/1.JPG" alt="First slide">
@@ -134,13 +145,11 @@
             <div class="container">
             FIND ME AT<br>
             <hr>
-            <span id="s">
-                <a href="https://www.facebook.com/john.xie.984" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.linkedin.com/in/kun-xie-42836b12a?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/VincentKunXie" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://www.instagram.com/vincentxk/?hl=en" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="http://weibo.com/xiekuncool" target="_blank"><i class="fa fa-weibo fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
+                <a href="https://www.facebook.com/john.xie.984" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/kun-xie-42836b12a?trk=hp-identity-name" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                <a href="https://github.com/VincentKunXie" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+                <a href="https://www.instagram.com/vincentxk/?hl=en" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="http://weibo.com/xiekuncool" target="_blank"><i class="fab fa-weibo fa-3x"></i></a>
             <br><br>
             </div>
      </section>
@@ -185,16 +194,17 @@
     <h1>Skills</h1>
     <div class="container">
         <br>
-        <h2>Language Tool</h2>
+        <h2>Languages and Framwroks</h2>
         <button class="button">HTML5</button>
         <button class="button">CSS3</button>
         <button class="button">JavaScript</button>
+        <button class="button">Ajax</button>
         <button class="button">jQuery</button>
         <button class="button">jQuery UI</button>
-        <button class="button">SQL</button>
+        <button class="button">Bootstrap</button>
+        <button class="button">mySQL</button>
         <button class="button">Reactjs</button>
         <button class="button">Python and Flask</button>
-        <button class="button">C</button>
         <button class="button">C++</button>
         <br><br>
         
@@ -203,7 +213,7 @@
         <button class="button">iMovie</button>
         <br><br>
         
-        <h2>Programming Tools</h2>
+        <h2>Edit and Compile Tools</h2>
         <button class="button">Brackets</button>
         <button class="button">Webstorm</button>
         <button class="button">QT Creator</button>
@@ -264,36 +274,36 @@
         
         <div class="accordion-container">
         
-        <h3> Volunteer Project: CIVO Website (09/2018)</h3>
+        <h4> Volunteer Project: CIVO Website (09/2018)</h4>
         <div>
         <p>Using Wordpress to build website for Chinese International
         Volunteer Organization </p>
         <a href="http://www.civo.ca" target="_blank">www.civo.ca</a><br><br>
         </div>
         
-        <h3> Web Application: Javascript Sketchpad (08/2018)</h3><div>
+        <h4> Web Application: Javascript Sketchpad (08/2018)</h4><div>
         <p>A web-based OO sketchpad using javascript, html and css. <br><br> From course ECE 9020 HCI.</p>
         <br></div>
 
-        <h3> Website: CareerAdvisor (04/2018)</h3>
+        <h4> Website: CareerAdvisor (04/2018)</h4>
         <div>
         <p>Group Project: Using Webflow, javascript, css and html to build a job
         planning website with better UI. <br><br>From course CS9552 HCI.</p>
         <br></div>
 
-        <h3> Web Application: QOS Pathfinder (12/2017)</h3>
+        <h4> Web Application: QOS Pathfinder (12/2017)</h4>
         <div>
         <p>Group project: Using javascript with Vis.js, html and css to simulate
         a network topology to find the shortest path by using dijkstra algorithm.<br><br> From course CS9657 Computer Networks II.</p>
         <br></div>
 
-        <h3> Game: Bacterial Bubble War (04/2017)</h3>
+        <h4> Game: Bacterial Bubble War (04/2017)</h4>
         <div>
         <p>Group Project: Using Unity (c#) to design a 2D survival shooting
         game. <br><br> From course CS4483 Game Design.</p>
         <br></div>
 
-        <h3> Web Application: Movie Theater Database (12/2016)</h3><div>
+        <h4> Web Application: Movie Theater Database (12/2016)</h4><div>
         <p>Group Project: A complete movie theater database system using
         HTML5, CSS3, Bootstrap, Python and Flask. <br><br>From course CS3319 Database I. </p>
         <br></div>
@@ -303,13 +313,35 @@
      </div>
      </section>
      
+     <section id="achieves">
+     <br>
+    <i class="fas fa-trophy fa-5x"></i><br><br>
+    <h1>Achievements</h1>
+    <div class="container text-left">
+        <br>
+        <ul><li>Best Team Project of CS3307 (Objected-Oriented
+        Design and Analysis ) (01/2017) <br>
+        <i>Top application revision of group software project Peach Galaxy for
+        Schulich School of Medicine and Dentistry</i></li></ul>
+
+        <ul><li>Western Scholarship of Excellence (2013)</li></ul>
+
+        <ul><li>UWO Industry Problem Solving Week Certificate of
+        Completion (Ericsson) (02/2017)</li></ul>
+     
+     <br>
+
+     </div>
+     </section>
+     
+     
     <section id="contact">
     <div class="container">
         <br>
-        <h3>Contact Information: </h3> 
-        <p><i class="fa fa-map-marker fa-spin fa-2x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 565 Proudfoot Ln, London, Ontario N6H 0A1</p>
-        <p><i class="fa fa-mobile fa-spin fa-2x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cell: 226-236-6557  </p>
-        <p><i class="fa fa-envelope fa-spin fa-2x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;Email: <a href="mailto:vincentxk@yahoo.ca">vincentxk@yahoo.ca</a></p><br>
+        <h3>Contact Information: </h3> <br>
+        <p><i class="fas fa-location-arrow fa-2x fa-spin"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address: 565 Proudfoot Ln, London, Ontario N6H 0A1</p>
+        <p><i class="fa fa-mobile fa-spin fa-2x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cell: 226-236-6557  </p>
+        <p><i class="fa fa-envelope fa-spin fa-2x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: <a href="mailto:vincentxk@yahoo.ca">vincentxk@yahoo.ca</a></p><br>
      </div>
     <div id="up"><a href="#top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
 

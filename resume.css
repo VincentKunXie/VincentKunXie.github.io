@@ -17,11 +17,16 @@
     }
     
     .carousel-inner>.carousel-item>img {
-        height: 400px;
+        height: 500px;
     }
     
     #myCarousel{
-        height: 400px;
+        height: 500px;
+    }
+    
+     #social>.container>a>i{
+       transform: scale(0.5);
+/*       margin-right: -20px;*/
     }
       
 }
@@ -39,11 +44,16 @@
     }
     
     .carousel-inner>.carousel-item>img {
-        height: 400px;
+        height: 500px;
     }
     
     #myCarousel{
-        height: 400px;
+        height: 500px;
+    }
+    
+    #social>.container>a>i{
+       transform: scale(0.7);
+/*       margin-right: -20px;*/
     }
     
 }
@@ -149,7 +159,7 @@
 
 
 #social{
-/*          padding-top: 6%;*/
+          margin-top: -80px;
           font-family: 'Catamaran', sans-serif;
           font-size: 40px;
           font-weight: bold;
@@ -158,6 +168,10 @@
           width: 100%;
 }
 
+
+#social>.container>a>i{
+    margin-right: 20px;
+}
 
 i[class^="fa"]{
       transition: all 1.2s ease;
@@ -192,7 +206,7 @@ i[class^="fa"]:hover {
 #profile{
 
           font-family: 'Catamaran', sans-serif;
-          font-size: 26px;
+          font-size: 24px;
           background-color:lightgrey;
     
 }
@@ -209,7 +223,7 @@ i.fa-graduation-cap{
 #education{
 /*          border: 20px solid pink;*/
           font-family: 'Catamaran', sans-serif;
-          font-size: 26px;
+          font-size: 24px;
           background-image:linear-gradient(to right, #4568DC, #B06AB3);
           text-align: center;
           width: 100%;
@@ -257,7 +271,7 @@ i.fa-wrench{
 
 #skills{
           font-family: 'Catamaran', sans-serif;
-          font-size: 26px;
+          font-size: 24px;
           background-image:linear-gradient(to right, pink, lightblue);
           text-align: center;
 }
@@ -275,7 +289,7 @@ i.fa-map{
 #experience{
 /*          border: 20px solid purple;*/
           font-family: 'Catamaran', sans-serif;
-          font-size: 26px;
+          font-size: 24px;
           background-color:blanchedalmond;
           text-shadow: 2px 2px 6px gray;
           text-align: center;
@@ -299,7 +313,7 @@ i.fa-file{
 #works{
           
           font-family: 'Catamaran', sans-serif;
-          font-size: 26px;
+          font-size: 24px;
           background-image:linear-gradient(to right, #ffd194, #70e1f5);
           text-align: center;
 }
@@ -310,33 +324,39 @@ i.fa-file{
 
 .accordion-container div{
     background-color:aliceblue;
-    font-size: 24px;
 }
 
 .accordion-container>div>a{
     color: tomato;
 }
 
-.accordion-container>h3{
+.accordion-container>h4{
     background-image:linear-gradient(to left, #ffd194, #70e1f5);
     color: black;
+    font-size: 12px;
 }
 
-.accordion-container h3:hover{
+.accordion-container h4:hover{
     background-image:linear-gradient(to left, #ffd194, #70e1f5);
     background: gold;
+}
 
+i.fa-trophy {
+    color:lightskyblue;
+}
+
+#achieves {
+    text-align: center;
+    background-image:linear-gradient(to bottom, dimgray, silver);
+    font-family: 'Catamaran', sans-serif;
+    font-size: 24px;
 }
 
 #contact{
           font-family: 'Catamaran', sans-serif;
-          font-size: 16px;
+          font-size: 18px;
           background-color:white;
-/*
-          border-style:solid;
-          border-width: 20px;
-          border-color: aquamarine;
-*/
+
 }
 
 #up{
@@ -355,6 +375,6 @@ i.fa-file{
 
 #up:hover{
     border-radius: 50%;
-    border: 2px solid tomato;
+    border: 2px dotted tomato;
     opacity: 0.9;
 }
