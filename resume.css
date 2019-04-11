@@ -190,7 +190,7 @@ i[class^="fa"]:hover {
     height: 360px;
     padding-top: 100px;
     border-radius: 50%;
-    background-image:url("avatar.jpg");
+    background-image:url("./images/avatar.jpg");
     background-size:cover;
     border: 10px solid tomato;
     align-content: center;  
