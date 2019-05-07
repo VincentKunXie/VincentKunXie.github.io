@@ -1,10 +1,12 @@
 
-/*
-@keyframes backgroundScroll {
-		from {background-position: -6000px 700px;}
-		to {background-position: 6000px 700px;}
+@keyframes shake {
+    0% {
+        transform: rotate(-10deg)
+    }
+    100% {
+        transform: rotate(10deg)
+    }
 }
-*/
 
 @media screen and (max-width:600px) {
     
@@ -238,10 +240,13 @@ i.fa-graduation-cap{
     padding-right: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition: all 0.6s;
+
 }
 
 .button:hover {
-    background-color: lightcoral;
+    background-color: greenyellow;
+    animation: shake linear 1s infinite alternate;
+
 }
 
 .edu-container {
