@@ -46,7 +46,20 @@
             
             
             $(".button").draggable({cancel : '.no-drag'});
-    
+            
+            
+            $(".poster-img").each(function(index){
+                $(this).click(function(){
+                    $("#picModal").css("display","block");
+                    $("#img").attr('src',$(this).attr('src'));
+                    $("#caption").html($(this).attr('alt'));  
+                })
+            })
+
+            $(".close").click(function(){
+                $("#picModal").css("display","none");
+            })
+
     });
 
     </script>
@@ -206,7 +219,8 @@
         <button class="button">mySQL</button>
         <button class="button">Reactjs</button>
         <button class="button">Python and Flask</button>
-        <button class="button">C++</button>
+        <button class="button">php</button>
+        <button class="button">C#</button>
        
         <br><br>
         
@@ -324,6 +338,19 @@
         <br><br>
         </div>
         * All works can be found at my github account @ <a href="https://github.com/VincentKunXie" target="_blank">VincentKunXie</a><br><br>
+        
+        <h1 class="text-center">Poster Design</h1><br><br><br>
+        <div class="posters">
+        <img class="poster-img" id="ps1" src="./images/ps1.jpg" alt="Poster for 'YOU' Charity">
+        <img class="poster-img" id="ps2" src="./images/ps2.jpg" alt="Poster for 'YOU' Charity">
+        </div>
+        
+        <div id="picModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img">
+          <div id="caption"></div>
+        </div>
+        
      </div>
      </section>
      
