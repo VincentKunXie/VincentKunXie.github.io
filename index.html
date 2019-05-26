@@ -32,6 +32,7 @@
             };
             
             $(".accordion-container").accordion({
+                heightStyle: "content",
                 icons: icons
             });
             
@@ -43,6 +44,16 @@
                     });
                 });
             }); 
+            
+            $(window).scroll(function() {
+              var $height = $(window).scrollTop();
+              
+                if($height > 500) {
+                    $('.intro>h1').addClass('activetxt');
+                } else {
+                    $('.intro>h1').removeClass('activetxt');
+                }
+            });
             
             
             $(".button").draggable({cancel : '.no-drag'});
@@ -108,8 +119,7 @@
     </nav>
 
             <div class="intro text-center">
-               <h1>Hello! I am Vincent Kun Xie <br>
-                Welcome to My Resume Webpage :)</h1> <br>
+               <h1 class="welcome">Hello! I am Vincent, welcome to my portfolio website :)</h1><br>
             </div>
             
              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1800">
@@ -175,7 +185,7 @@
        <div class="mycircle"></div>
        <div class="container" id="pro">
         <h1>About Me</h1><br>
-        <i class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true"></i><br><p>I am a new graduated master student from Western University, Computer Science department. Web Development is always the thing that interests me the most. I am currently seeking for a full-time web front end developer position, and I look forward to learning new technologies and collaborating with new people.<i class="fa fa-quote-right fa-2x fa-pull-right" aria-hidden="true" style="display: inline-block"></i></p><br><br>
+        <i class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true"></i><br><p>A self-motivated and proactive young web developer and designer with enthusiasm in turning innovative design concepts to real interactive websites. I graduated from Western University with major in computer science. While I was studying in school, I gradually gained strong interest in web development. I keep teaching myself front end web technologies everyday to enrich my experience. I am a vigorous team player and a fast learner; I really look forward to collaborating with new people and learning new technologies.<i class="fa fa-quote-right fa-2x fa-pull-right" aria-hidden="true" style="display: inline-block"></i></p><br><br>
      </div><br>
      </section>
      
@@ -291,6 +301,10 @@
         
         <div class="accordion-container">
         
+        <h4> Web Application: 2 Day Weather Forecast (05/2019)</h4><div>
+        <p>A weather forecast app that helps users get 2 day weather information for a city.<br><br>This web app used bootstrap to design the ui. php is used to fetch json data by using a free api from <i><a href="https://openweathermap.org" target="_blank">https://openweathermap.org</a></i></p><a href="https://github.com/VincentKunXie/weather-forecast" target="_blank">Check this repository</a>
+        <br></div>
+        
         <h4> React Web Application: PhotoWall Project (03/2019)</h4><div>
         <p>An "Instagram" like web application that allows multiple users registration. Users can add posts, comment on posts and delete posts or comments that belong to their accounts. <br><br>This app used react and redux with help from google firebase as real-time data storage.</p><a href="https://github.com/VincentKunXie/PhowoWall" target="_blank">Check this repository</a>
         <br></div>
@@ -337,9 +351,10 @@
         <br></div>
         <br><br>
         </div>
-        * All works can be found at my github account @ <a href="https://github.com/VincentKunXie" target="_blank">VincentKunXie</a><br><br>
         
-        <h1 class="text-center">Poster Design</h1><br><br><br>
+        * All works can be found at my github account @ <a href="https://github.com/VincentKunXie" target="_blank">VincentKunXie</a><br><br><br><br><br>
+        
+        <h1 class="text-center">Photoshop Poster Design</h1><br><br><br>
         <div class="posters">
         <img class="poster-img" id="ps1" src="./images/ps1.jpg" alt="Poster for 'YOU' Charity">
         <img class="poster-img" id="ps2" src="./images/ps2.jpg" alt="Poster for 'YOU' Charity">

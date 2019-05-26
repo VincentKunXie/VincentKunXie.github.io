@@ -118,35 +118,28 @@
 .intro{
           font-family: 'Catamaran', sans-serif;   
           font-weight: bold;
-          font-size: 36px;
           position: sticky;
           top: 0px;
           opacity: 0.6;
           height: 160px;
           z-index: 1;
-/*
-          background: -webkit-linear-gradient(tomato, orange);
-  		  -webkit-background-clip: text;
-  		  -webkit-text-fill-color: transparent;
-*/
-          
+          color: aliceblue;
 }
 
-.intro>h1{
-          width: 100%;
+.welcome, .welcome:hover{
           background: -webkit-linear-gradient(tomato, orange);
           padding-top: 30px;
           padding-bottom: 30px;
-/*          transition: 1.2s;*/
+          transition: 0.6s;
+          font-size: 36px;
 }
 
-.intro>h1:hover{
-          background: -webkit-linear-gradient(pink, aqua);
-/*
-  		  -webkit-background-clip: text;
-  		  -webkit-text-fill-color: transparent;
-          -webkit-transform: scale3d(1.2, 1.2, 1.2);
-*/
+.activetxt{
+          background: -webkit-linear-gradient(lime, aqua);
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-size: 24px;
+          color:black;
 }
 
 #myCarousel>a>i {
@@ -165,16 +158,9 @@
     transform: scale(3);
 }
 
-/*
-#myCarousel>a>.carousel-control-prev-icon{
-    color: tomato;
-}
-*/
-
 .carousel-item>img{
     width: 100%;
 }
-
 
 #social{
           margin-top: -80px;
@@ -208,25 +194,24 @@ i[class^="fa"]:hover {
     height: 360px;
     padding-top: 100px;
     border-radius: 50%;
-    background-image:url("./images/avatar.jpg");
+    background-image:url("./images/avatar1.jpg");
     background-size:cover;
-    border: 10px solid tomato;
+    border: 6px solid gray;
     align-content: center;  
-    transition:width 1s, height 1s, border 1s; 
+    transition: 1s all; 
 }
 
 .mycircle:hover {
     width: 520px;
     height: 520px;
-    border: 10px dotted lightblue;
+    border: 6px dotted white;
+    background-image:url("./images/avatar2.jpg");
 }
 
 #profile{
-
           font-family: 'Catamaran', sans-serif;
           font-size: 24px;
           background-color:lightgrey;
-    
 }
 
 
@@ -332,8 +317,7 @@ i.fa-file{
 /*          width: 100%;*/
 }
 
-#works{
-          
+#works{   
     font-family: 'Catamaran', sans-serif;
     font-size: 24px;
     background-image:linear-gradient(to top right, #ffd194, #70e1f5);
@@ -342,6 +326,12 @@ i.fa-file{
 
 #works>.container>.accordion-container{
     text-align: left;
+    font-size: 24px;
+}
+
+.accordion-container .ui-accordion-content{
+    font-size: 22px;
+    background-color:beige;
 }
 
 #works>.container>.posters>img {
@@ -439,23 +429,18 @@ i.fa-file{
   }
 }
 
-.accordion-container div{
-    background-color:aliceblue;
-}
-
 .accordion-container>div>a{
     color: tomato;
 }
 
 .accordion-container>h4{
-    background-image:linear-gradient(to bottom left, #ffd194, #70e1f5);
-    color: black;
+    background-image:linear-gradient(to left, #4e54c8, #8f94fb);
+    color: azure;
     font-size: 12px;
 }
 
 .accordion-container h4:hover{
-    background-image:linear-gradient(to left, #ffd194, #70e1f5);
-    background: tomato;
+    background:tomato;
 }
 
 i.fa-trophy {
