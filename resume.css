@@ -33,14 +33,14 @@
     }
     
     .carousel-inner>.carousel-item>img {
-        height: 500px;
+        height: 600px;
     }
     
     #myCarousel{
-        height: 500px;
+        height: 600px;
     }
     
-     #social>.container>a>i{
+    #social>.container>a>i{
          animation: none;
        transform: scale(0.3);
 /*       margin-right: -20px;*/
@@ -139,7 +139,7 @@
           padding-top: 5px;
           padding-bottom: 5px;
           font-size: 24px;
-          color:black;
+          color:white;
 }
 
 #myCarousel>a>i {
@@ -232,6 +232,27 @@ i.fa-graduation-cap{
           width: 100%;
 }
 
+.edu-container {
+        margin: auto;
+        width: 50%;
+        text-align: left;
+        margin-bottom: 30px;
+        vertical-align: top;
+        padding-left: 20px;
+        padding-top: 20px;
+        background-color: aliceblue;
+        border-radius: 30px; 
+        box-shadow: 0px 0px 20px black;
+}
+
+.edu-container>h1{
+    border-bottom: 5px dotted;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    animation: glow linear 2s infinite alternate;
+}
+
 .button{
     background-color: white;
     color: black;
@@ -249,24 +270,7 @@ i.fa-graduation-cap{
     cursor: grab;
 }
 
-.edu-container {
-        display: inline-block;
-        width: 40%;
-        text-align: left;
-        margin-right: 30px;
-        vertical-align: top;
-        padding-left: 20px;
-        border: 8px dotted;
-        animation: glow linear 2s infinite alternate;
-}
 
-.edu-container>h1{
-    border-bottom: 2px dotted;
-    margin-right: 20px;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    animation: glow linear 2s infinite alternate;
-}
 
 i.fa-wrench{
           padding-top: 3%;
@@ -297,7 +301,7 @@ i.fa-map{
 /*          border: 20px solid purple;*/
           font-family: 'Catamaran', sans-serif;
           font-size: 24px;
-          background-color:blanchedalmond;
+          background-color:antiquewhite;
           text-shadow: 2px 2px 6px gray;
           text-align: center;
 }
@@ -306,8 +310,19 @@ i.fa-map{
     text-align: left;
 }
 
+/*
 #experience>.container>div{
     border-bottom: 6px dotted lightgray; 
+}
+*/
+
+.experience-card{
+    border-radius: 30px; 
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0px 0px 20px gray;
+    border: 20px dotted lightgray; 
 }
 
 i.fa-file{
@@ -449,7 +464,7 @@ i.fa-trophy {
 
 #achieves {
     text-align: center;
-    background-image:linear-gradient(to bottom, dimgray, silver);
+    background-image:linear-gradient(to bottom, silver, gray);
     font-family: 'Catamaran', sans-serif;
     font-size: 24px;
 }
@@ -461,22 +476,19 @@ i.fa-trophy {
 
 }
 
-#up{
+#goUp{
     position: fixed;
-    bottom: 20px;
-    right: 25px;
+    bottom: 0px;
+    right: 50px;
     transform: scale(2);
-    border: 2px dotted black;
-    height: 20px;
-    width: 30px;
-    text-align: center;
-    opacity: 0.56;
-    transition: 0.5s;
+    opacity: 0.50;
+    transition: 0.3s;
     padding-bottom: 20px;
 }
 
-#up:hover{
+#goUp:hover{
     border-radius: 50%;
-    border: 2px dotted tomato;
+    bottom: 20px;
+    right: 20px;
     opacity: 0.9;
 }
